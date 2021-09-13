@@ -1,9 +1,17 @@
 #include <Arduino.h>
+#include <Ultra.h>
+#include <Photo.h>
+Ultra u(1,2);
+Photo p(3);
 
-void setup() {
-  // put your setup code here, to run once:
+void setup()
+{
+u.init();
+
+
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
+u.read();
 }
