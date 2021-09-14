@@ -11,7 +11,7 @@ private:
     public: 
     Photo(byte pinBut);
     void init();
-    void read();
+    int read();
 
 
 

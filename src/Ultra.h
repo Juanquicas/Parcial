@@ -14,7 +14,7 @@ class Ultra
     public:
     Ultra(byte pinTrigger, byte pinEcho);
     void init();
-    void read();
+    int read();
 
     // lo que diferencia es los pines 
 

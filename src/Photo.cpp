@@ -14,8 +14,8 @@ void Photo :: init()
     
 }
 
-void Photo :: read()
+int Photo :: read()
 {
     val=digitalRead(pinBut);
-    Serial.println(val);
+    return val;
 }

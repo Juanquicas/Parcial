@@ -24,7 +24,7 @@ void Ultra:: init()
   delayMicroseconds(10);
   // Sets the trigPin HIGH (ACTIVE) for 10 microseconds
 }
-void Ultra:: read()
+int Ultra:: read()
 {
   
   digitalWrite(pinTrigger, HIGH);
@@ -32,6 +32,7 @@ void Ultra:: read()
   digitalWrite(pinTrigger,LOW);
   int time =pulseIn(pinEcho, HIGH, 5000);
   dist = time*0.1715;
-  Serial.println(dist);
-  delay(500);
+  return dist;
+  //Serial.println(dist);
+  //delay(500);
 }

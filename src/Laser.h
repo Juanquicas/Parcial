@@ -2,13 +2,13 @@
 # define LASER_H 
 # include <Arduino.h>
 
-class Photo
+class Laser
 {
     private: 
     byte pinLa;
 
     public:
-    Photo(byte pinLa);
+    Laser(byte pinLa);
     void init();
     void read();
 
